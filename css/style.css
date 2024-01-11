@@ -1,0 +1,131 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size (form inputs): 24px
+
+### Font
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+:root {
+
+ /* Primary */
+
+--strong-cyan: hsl(172, 67%, 45%);
+
+/* Neutral */
+
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan: hsl(186, 14%, 43%);
+--Grayish-cyan: hsl(184, 14%, 56%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  background-color: var(--Light-grayish-cyan);
+}
+
+.main-wrap {
+  display: flex;
+  height: 40vh;
+
+  background-color: var(--White);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10vh;
+
+/* box shadow */
+}
+.button {
+  width: 50%;
+
+}
+
+.tip form{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 1vh;
+}
+.tip p {
+}
+.tip button {
+  background-color: var(--Very-dark-cyan);
+  border: transparent;
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  font-size: 24px;
+  font-family: 'Space Mono';
+  font-weight: 800;
+
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+.tip button:hover {
+  background-color: var(--strong-cyan);
+}
+
+.tip form input {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  border: 2px solid var(--Very-light-grayish-cyan);
+  font-size: 24px;
+  font-family: "Space Mono";
+  transition: all .2s ease-in-out;
+
+}
+.tip form input::placeholder {
+  font-family: 'Space Mono';
+  padding: 12px;
+  text-align: center;
+  color: var(--Grayish-cyan);
+  background-color: var(--Very-light-grayish-cyan);
+  font-size: 24px;
+}
+.tip form input:focus {
+  font-family: 'Space Mono';
+  font-size: 24px;
+  outline: var(--strong-cyan) solid 1px;
+}
+
+.tip form input:hover {
+  border: 2px solid var(--strong-cyan);
+}
+
+.display-wrap-div {
+  width: 50%;
+}

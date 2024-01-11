@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.google.com/specimen/Space+Mono">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+
+  <img src="images/logo.svg" alt="">
+
+
+  <div class="main-wrap">
+    <div class="button">
+      <div>
+        <p>Bill</p>
+        <label for="bill"><img src="images/icon-dollar.svg"></label>
+        <input name="bill" type="text" autocomplete="off">
+      </div>
+
+      <div class="tip">
+        <label for="tip-btn">Select the Tip</label>
+        <form name="tip-btn">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+
+          <input type="text" placeholder="Custom" autocomplete="off">
+        </form>
+      </div>
+
+      <div>
+        <p>Number of People</p>
+        <p>Can't be zero</p>
+        <label for="people"><img src="/images/icon-person.svg"></label>
+        <input name="people" type="text" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="display-wrap-div">
+      <div class="display-1">
+        <p>Tip Amount<br>
+          <span>/ Person</span>
+        </p>
+        <h1 class="price">Price 1</h1>
+      </div>
+      <div class="display-2">
+        <p>Total<br>
+          <span>/ Person</span>
+        </p>
+        <h1 class="price">Price 1</h1>
+      </div>
+
+      <div class="reset">
+        <button>Reset</button>
+      </div>
+
+    </div>
+  </div> <!-- main wrap div -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
