@@ -20,34 +20,33 @@
 
   <div class="main-wrap">
     <div class="button">
-      <div>
+      <div class="bill">
         <p>Bill</p>
-        <label for="bill"><img src="images/icon-dollar.svg"></label>
-        <input name="bill" type="text" autocomplete="off">
+        <label for="bill" class="labelMove"><img src="images/icon-dollar.svg"></label>
+        <input name="bill" type="text" autocomplete="off" class="input-1" placeholder="$">
       </div>
 
       <div class="tip">
         <label for="tip-btn">Select the Tip</label>
         <form name="tip-btn">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
+          <button value="5">5%</button>
+          <button value="10">10%</button>
+          <button value="15">15%</button>
+          <button value="25">25%</button>
+          <button value="50">50%</button>
 
           <input type="text" placeholder="Custom" autocomplete="off">
         </form>
       </div>
 
-      <div>
+      <div class="people">
         <p>Number of People</p>
-        <p>Can't be zero</p>
-        <label for="people"><img src="/images/icon-person.svg"></label>
-        <input name="people" type="text" autocomplete="off">
+        <label for="people" class="labelMove"><img src="/images/icon-person.svg"></label>
+        <input name="people" type="text" autocomplete="off" class="input-1" placeholder="\o/">
       </div>
     </div>
 
-    <div class="display-wrap-div">
+    <div class=" display-wrap-div">
       <div class="display-1">
         <p>Tip Amount<br>
           <span>/ Person</span>

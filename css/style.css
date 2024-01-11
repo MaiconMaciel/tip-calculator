@@ -70,17 +70,18 @@ body {
   width: 50%;
 
 }
+.button p {
+  color: var(--Grayish-cyan);
+}
 
 .tip form{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   justify-items: center;
   margin-top: 1vh;
 }
-.tip p {
-}
+
 .tip button {
   background-color: var(--Very-dark-cyan);
   border: transparent;
@@ -99,6 +100,7 @@ body {
 }
 
 .tip form input {
+  text-align: right;
   width: 90%;
   height: 90%;
   border-radius: 5px;
@@ -128,4 +130,35 @@ body {
 
 .display-wrap-div {
   width: 50%;
+}
+
+.input-1::before {
+  content: url('./images/icon-dolar.svg');
+}
+
+.input-1 {
+  text-align: right;
+  border-radius: 5px;
+  border: 2px solid var(--Very-light-grayish-cyan);
+  font-size: 24px;
+  font-family: "Space Mono";
+  transition: all .2s ease-in-out;
+}
+.input-1:hover {
+  font-family: 'Space Mono';
+  background-color: var(--Very-light-grayish-cyan);
+  border: 2px solid var(--strong-cyan)
+}
+.input-1:focus {
+  outline: var(--strong-cyan) solid 1px;
+  border: 2px solid var(--strong-cyan);
+  background-color: var(--Very-light-grayish-cyan);
+
+}
+.input-1::placeholder {
+  text-align: left;
+}
+
+.labelMove {
+  display: none;
 }
