@@ -50,10 +50,17 @@ body {
   font-weight: 700;
   background-color: var(--Light-grayish-cyan);
 }
-
+.logo {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
 .main-wrap {
   display: flex;
-  height: 40vh;
+  justify-content: space-around;
+  align-items: center;
 
   background-color: var(--White);
   border-radius: 20px;
@@ -62,12 +69,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding: 10vh;
+  padding: 17vh;
+  max-height: 20vh;
 
 /* box shadow */
 }
-.button {
-  width: 50%;
+div.button {
+  min-width: 50%;
+  margin: 10px 0 10px 10px;
 
 }
 .button p {
@@ -91,6 +100,7 @@ body {
   font-size: 24px;
   font-family: 'Space Mono';
   font-weight: 800;
+  color: var(--White);
 
   border-radius: 5px;
   transition: all .2s ease-in-out;
@@ -108,6 +118,8 @@ body {
   font-size: 24px;
   font-family: "Space Mono";
   transition: all .2s ease-in-out;
+  color: var(--Very-dark-cyan);
+
 
 }
 .tip form input::placeholder {
@@ -122,6 +134,7 @@ body {
   font-family: 'Space Mono';
   font-size: 24px;
   outline: var(--strong-cyan) solid 1px;
+
 }
 
 .tip form input:hover {
@@ -139,6 +152,7 @@ body {
 .input-1 {
   text-align: right;
   border-radius: 5px;
+  color: var(--Very-dark-cyan);
   border: 2px solid var(--Very-light-grayish-cyan);
   font-size: 24px;
   font-family: "Space Mono";
@@ -161,4 +175,43 @@ body {
 
 .labelMove {
   display: none;
+}
+
+/* right side */
+
+.display-wrap-div {
+  background-color: var(--Very-dark-cyan);
+  min-width: 50%;
+  padding: 8vh;
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+
+.reset button{
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--strong-cyan);
+  color: var(--Very-dark-cyan);
+  border: 2px solid var(--strong-cyan);
+  font-size: 24px;
+  font-family: "Space Mono";
+  transition: all .2s ease-in-out;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+.data p{
+  color: var(--White);
+}
+
+.data p span{
+  color: var(--strong-cyan);
+}
+
+.price {
+  color: var(--strong-cyan);
 }
